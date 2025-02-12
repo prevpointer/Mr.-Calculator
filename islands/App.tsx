@@ -1,37 +1,16 @@
 import { Header } from "../components/header.tsx";
 import { Footer } from "../components/footer.tsx";
-import { Form } from "../islands/Forms.tsx";
-import { Button } from "../islands/Button.tsx";
-import { resultArea, textArea1, textArea2, precision } from "./AllMethods.ts";
+import { TextAreaInput } from "./TextAreaInput.tsx";
+import { Button } from "./Button.tsx";
+import {
+  valueOfInput1,
+  valueOfInput2,
+  valueOfPrecision,
+  valueOfResult,
+} from "../utils/stote.ts";
+import { ButtonArray } from "../utils/content.ts";
 
-const ButtonArray = [
-  {
-    opType: "+",
-    oplevel: "x+y",
-  },
-  {
-    opType: "-",
-    oplevel: "x-y",
-  },
-  {
-    opType: "*",
-    oplevel: "x*y",
-  },
-  {
-    opType: "/",
-    oplevel: "x/y",
-  },
-  {
-    opType: "%",
-    oplevel: "x%y",
-  },
-  {
-    opType: "^",
-    oplevel: "x^y",
-  },
-];
-
-export function Calculator() {
+export function App() {
   return (
     <>
       <div className="blur-layer">
@@ -41,26 +20,26 @@ export function Calculator() {
           <div id="container">
             <div class="input-section">
               <div className="fill-ip-section">
-                <Form
+                <TextAreaInput
                   readOnly={false}
-                  value={textArea1.value}
-                  type="t1"
+                  value={valueOfInput1.value}
+                  typeOfInput="Input1"
                   placeholder="operand1"
                 />
-                <Form
+                <TextAreaInput
                   readOnly={false}
-                  value={textArea2.value}
-                  type="t2"
+                  value={valueOfInput2.value}
+                  typeOfInput="Input2"
                   placeholder="operand2"
                 />
               </div>
               <div className="operation-section">
                 <div>
-                  <Form
+                  <TextAreaInput
                     width="100%"
                     readOnly={false}
-                    value={precision.value}
-                    type="t3"
+                    value={valueOfPrecision.value}
+                    typeOfInput="precisionInput"
                     placeholder="precision"
                   />
                 </div>
@@ -76,12 +55,12 @@ export function Calculator() {
               </div>
             </div>
             <div className="output-section">
-              <Form
+              <TextAreaInput
                 width="80%"
                 readOnly={true}
-                value={resultArea.value}
-                type=""
+                value={valueOfResult.value}
                 placeholder="result"
+                typeOfInput=""
               />
               <Button value="clear" label="Clear" />
             </div>

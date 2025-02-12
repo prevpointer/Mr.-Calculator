@@ -1,26 +1,26 @@
-import {operationValue,operation} from './AllMethods.ts'
-interface Prop{
-    value:string,
-    label:string
-}
+import { ButtonProps } from "../utils/types.ts";
+import { operation } from "./Calculation.ts";
+import { valueOfOperation } from "../utils/stote.ts";
+
+export const Button = (props: ButtonProps) => {
+  const { value, label } = props;
 
 
-export const Button=(props:Prop)=>{
-    const {value,label}=props;
-    const storeOperation=(e:Event)=>{
-        const target=e.currentTarget as HTMLButtonElement;
-        operationValue.value=target.value
+  const handleClick = (e: Event) => {
+    const target = e.currentTarget as HTMLButtonElement;
+    // storing the value of the button for performing operation
+    valueOfOperation.value = target.value;
+    operation(e); // Call second function
+  };
 
-    }
-
-    const handleClick = (e:Event) => {
-        const target = e.currentTarget as HTMLButtonElement;
-        storeOperation(e); // Call first function 
-        operation(e); // Call second function
-        
-    };
-
-    return (
-        <button class="btn" value={value} style={{width:"90px"}} onClick={handleClick} >{props.label}</button>
-    );
-}
+  return (
+    <button
+      class="btn"
+      value={value}
+      style={{ width: "90px" }}
+      onClick={handleClick}
+    >
+      {props.label}
+    </button>
+  );
+};

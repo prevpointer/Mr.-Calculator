@@ -1,9 +1,9 @@
-import { Calculator } from "../islands/Calculator.tsx";
+import { App } from "../islands/App.tsx";
 
 export default function Home() {
   return (
     <>
-      <Calculator />
+      <App />
     </>
   );
 }
