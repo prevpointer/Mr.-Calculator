@@ -1,5 +1,8 @@
 import { signal } from "@preact/signals";
-import Big from "https://unpkg.com/big.js@6.2.1/big.mjs";
+// @deno-types="npm:@types/big.js"
+import Big from 'https://unpkg.com/big.js@6.2.2/big.mjs';
+
+
 
 export const textArea1 = signal<string>("");
 export const textArea2 = signal<string>("");
@@ -35,6 +38,7 @@ export const operation = (e: Event) => {
   }
 
   const num1 = new Big(textArea1.value);
+  
   const num2 = new Big(textArea2.value);
   const precisionValue = parseInt(precision.value, 10) || 0; // Use default 0 if empty or invalid
 

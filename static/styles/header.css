@@ -1,62 +1,84 @@
-.header{
-    height: 15vh;
+.header {
+    height: 70%;
     width: 100%;
-    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, #149414  93.2% );
-    box-shadow:0px 25px 50px linear-gradiant(black white black);
-
-}
-
-.header p{
     color: #ffffff;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
     text-align: center;
-    line-height: 15vh;
-    font-size: 4rem;
 }
 
+.header h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    background: linear-gradient(to top, #56565656 2%, #fff 98%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-.contact-section{
-    height: 7vh;
+.header p {
+    font-size: .9rem;
+    color: #adadadaa;
+}
+
+.header a {
+    text-decoration: none;
+    font-size: .9rem;
+    color: #c0c0c0;
+}
+
+.hero-img {
+    position: relative;
+    left: 0%;
+    width: 160px;
+    display: block;
+    margin-top: 3rem;
+}
+
+.contact-section {
+    height: 8vh;
     width: 100%;
-    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, #149414  93.2% );
-    box-shadow:0px 25px 50px linear-gradiant(black white black);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
+    background: #1b1b1b42;
+    backdrop-filter: blur(16px);
+    border-top: 1.2px solid #ffffff40;
 }
 
-.icon{
+.icon {
     background-color: transparent;
     height: 35px;
     width: 35px;
-    border-radius: 100px;
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 5px 2px 8px -4px #ffffff;
+    box-shadow: 0 0 3px 1px #00000045;
+    transition: transform 0.3s;
 }
 
-.icon a{
+.icon a {
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
 }
 
-.icon:hover{
+.icon:hover {
     background-color: #fff;
-    box-shadow: 5px 2px 8px -4px #000000;
+    transform: scale(1.2) translateY(-16px);
 }
 
 
-.icon img{
+.icon img {
     height: 20px;
     width: 20px;
-    filter:invert(93);
+    filter: invert(1);
 }
 
-
-.icon img:hover{
-    filter:invert(0) ;
+.icon:hover img {
+    filter: invert(0);
 }
-

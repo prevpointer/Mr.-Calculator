@@ -1,10 +1,38 @@
 .form-style {
-    height: 16vh;
-    color: white;
+    height: 100%;
     border-radius: 10px;
+    /* border: 1.4px solid #b8b8b8; */
+    padding: 16px;
+    border: none;
     outline: none;
-    background-color: transparent;
-    padding: 5px 12px 5px 5px;
+    color: white;
+    background-color: #00000044;
     resize: none;
     overflow-y: scroll;
+    /* box-shadow: inset 0 0 12px #ffffff14;
+  background: linear-gradient(180deg,rgba(243,238,255,0) 0%,rgba(243,238,255,.05) 100%),rgba(147,130,255,.04); */
+}
+
+.form-style:hover,
+.form-style:focus,
+.form-style:active {
+    outline: 2px solid #fff;
+}
+
+/* .output-section .form-style:first-child {
+    border-radius: 10px;
+} */
+
+.operation-section div .form-style {
+    height: 8.4vh;
+    display: block;
+    border-radius: 10px;
+}
+
+.operation-section .ops {
+    overflow-y: scroll;
+}
+
+.form-style:placeholder-shown {
+    color: #8f8f8f;
 }

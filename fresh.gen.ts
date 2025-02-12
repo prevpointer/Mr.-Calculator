@@ -9,7 +9,7 @@ import * as $AllMethods from "./islands/AllMethods.ts";
 import * as $Button from "./islands/Button.tsx";
 import * as $Calculator from "./islands/Calculator.tsx";
 import * as $Forms from "./islands/Forms.tsx";
-import { type Manifest } from "$fresh/server.ts";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {

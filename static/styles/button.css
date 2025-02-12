@@ -1,6 +1,6 @@
-.btn{
+.btn {
     height: 50px;
-    border:solid #ffffff 2px;
+    border: solid #ffffff 2px;
     margin: 1px;
     border-radius: 25px;
     background-color: transparent;
@@ -9,20 +9,22 @@
     transition: all ease 0.2s;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #fff;
     color: #000;
     font-size: 1.2em;
 }
 
 
-.active{
+.active {
     background-color: #fff;
     color: #000;
     font-size: 1.2em;
 }
 
 
-.output-section>button{
-    margin: 2px;
+.output-section > .btn {
+    display: block;
+    width: 28%;
+    align-self: center;
 }
