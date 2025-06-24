@@ -1,84 +1,127 @@
 .header {
-    height: 70%;
-    width: 100%;
-    color: #ffffff;
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
+  height: 70%;
+  width: 100%;
+  color: #ffffff;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: start;
 }
 
 .header h1 {
-    font-size: 3rem;
-    font-weight: 400;
-    background: linear-gradient(to top, #56565656 2%, #fff 98%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  font-weight: 400;
+  background: linear-gradient(to top, #56565656 2%, #fff 98%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
 .header p {
-    font-size: .9rem;
-    color: #adadadaa;
+  font-size: 0.9rem;
+  color: #adadadaa;
 }
 
 .header a {
-    text-decoration: none;
-    font-size: .9rem;
-    color: #c0c0c0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #c0c0c0;
 }
 
 .hero-img {
-    position: relative;
-    left: 0%;
-    width: 160px;
-    display: block;
-    margin-top: 3rem;
+  /* position: relative; */
+  /* left: 0%; */
+  width: 160px;
+  /* display: block; */
+  margin-top: 3rem;
 }
 
 .contact-section {
-    height: 8vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    background: #1b1b1b42;
-    backdrop-filter: blur(16px);
-    border-top: 1.2px solid #ffffff40;
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background: #1b1b1b42;
+  backdrop-filter: blur(16px);
+  border-top: 1.2px solid #ffffff40;
 }
 
 .icon {
-    background-color: transparent;
-    height: 35px;
-    width: 35px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 3px 1px #00000045;
-    transition: transform 0.3s;
+  background-color: transparent;
+  height: 35px;
+  width: 35px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 3px 1px #00000045;
+  transition: transform 0.3s;
 }
 
 .icon a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .icon:hover {
-    background-color: #fff;
-    transform: scale(1.2) translateY(-16px);
+  background-color: #fff;
+  transform: scale(1.2) translateY(-16px);
 }
 
-
 .icon img {
-    height: 20px;
-    width: 20px;
-    filter: invert(1);
+  height: 20px;
+  width: 20px;
+  filter: invert(1);
 }
 
 .icon:hover img {
-    filter: invert(0);
+  filter: invert(0);
+}
+
+/* responsive for tablets */
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    /* background-color: red; */
+    align-items: start;
+    justify-content: center;
+    height: auto;
+    gap: 15px;
+  }
+  .header h1 {
+    font-size: 2rem;
+    text-align: justify;
+  }
+  .hero-img {
+    width: 30px;
+    margin-top: 0;
+  }
+}
+
+/* responsive for phone */
+@media screen and (orientation: portrait) and (max-width: 684px) {
+  .header {
+    flex-direction: row;
+    /* background-color: red; */
+    align-items: start;
+    justify-content: center;
+    height: auto;
+    gap: 15px;
+  }
+  .header h1 {
+    font-size: 2rem;
+    text-align: justify;
+  }
+  .hero-img {
+    width: 30px;
+    margin-top: 0;
+  }
 }
