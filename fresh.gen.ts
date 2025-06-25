@@ -8,6 +8,7 @@ import * as $index from "./routes/index.tsx";
 import * as $App from "./islands/App.tsx";
 import * as $Button from "./islands/Button.tsx";
 import * as $Calculation from "./islands/Calculation.ts";
+import * as $DownloadBtn from "./islands/DownloadBtn.tsx";
 import * as $TextAreaInput from "./islands/TextAreaInput.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
@@ -21,6 +22,7 @@ const manifest = {
     "./islands/App.tsx": $App,
     "./islands/Button.tsx": $Button,
     "./islands/Calculation.ts": $Calculation,
+    "./islands/DownloadBtn.tsx": $DownloadBtn,
     "./islands/TextAreaInput.tsx": $TextAreaInput,
   },
   baseUrl: import.meta.url,

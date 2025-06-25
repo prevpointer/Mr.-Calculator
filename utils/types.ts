@@ -7,6 +7,6 @@ export interface FormPropType {
   }
 
 export interface ButtonProps{
-    value:string,
+    value?:string,
     label:string
 }

@@ -9,6 +9,7 @@ import {
   valueOfResult,
 } from "../utils/stote.ts";
 import { ButtonArray } from "../utils/content.ts";
+import OutPutDownloadButtton from "./DownloadBtn.tsx";
 
 export function App() {
   return (
@@ -62,7 +63,16 @@ export function App() {
                 placeholder="result"
                 typeOfInput=""
               />
-              <Button value="clear" label="Clear" />
+              <div class={"output-section-btn"}>
+                <Button value="clear" label="Clear" />
+                {valueOfResult.value.length !== 0 ? (
+                  <OutPutDownloadButtton
+                    calculateOutput={valueOfResult.value}
+                  />
+                ) : (
+                  <></>
+                )}
+              </div>
             </div>
           </div>
         </div>

@@ -87,6 +87,15 @@ body {
     align-items: end;
     justify-content: start;
     gap: 22px;
+    /* background-color: rgb(255, 98, 98); */
+}
+.output-section-btn{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
 }
 
 .fill-ip-section {
