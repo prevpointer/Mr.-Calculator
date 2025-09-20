@@ -7,8 +7,3 @@ This is a web application built using Fresh (deno runtime) that allows you to pe
 * **Arbitrary-precision arithmetic:** Calculate with numbers beyond the limitations of standard JavaScript data types using Big.js.
 * **User-friendly interface:** Interact with the calculator through a clear and intuitive interface.
 
-## Pictures
-
-
-![1710518419585](images/README/1710518419585.png)
-
