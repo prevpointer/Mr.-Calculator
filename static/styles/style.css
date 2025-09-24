@@ -18,7 +18,7 @@ body {
 .blur-layer {
     display: block;
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     background-color: transparent;
     /* background-image: */
     background-image:
